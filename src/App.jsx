@@ -7,6 +7,10 @@ export default function App() {
                 <li className="bg-slate-400 rounded-md w-fit p-4">Récupérer votre ordinateur</li>
                 <li className="bg-slate-400 rounded-md w-fit p-4">Récupérer votre badge</li>
                 <li className="bg-slate-400 rounded-md w-fit p-4">Aller à la cantine</li>
+                <button className= "bg-red-400">
+                    <img className="Image" src="./logo512.png">
+                    </img>
+                </button>
             </ul>
         </div>
     );
