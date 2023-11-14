@@ -29,4 +29,9 @@ code {
 
 .isActive svg {
     fill: #162061;
+    stroke: #162061;
+}
+
+.notActive {
+    color: #7379A0;
 }

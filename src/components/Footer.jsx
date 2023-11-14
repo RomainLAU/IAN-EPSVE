@@ -4,6 +4,7 @@ import { ReactComponent as Maps } from "../assets/Maps.svg"
 import { ReactComponent as Profil } from "../assets/Profil.svg"
 
 const activeClassName = "isActive"
+const notActive = "notActive"
 
 
 export default function Footer({children}) {
@@ -13,7 +14,7 @@ export default function Footer({children}) {
                 <NavLink 
                     to="/" 
                     className={({ isActive }) => 
-                        isActive ? `flex flex-col-reverse content-center items-center ${activeClassName}` : "flex flex-col-reverse content-center items-center"
+                        isActive ? `flex flex-col-reverse content-center items-center ${activeClassName}` : `flex flex-col-reverse content-center items-center ${notActive}`
                     }
                 >
                     <p className="text-center">Home</p>
@@ -22,7 +23,7 @@ export default function Footer({children}) {
                 <NavLink 
                     to="/map" 
                     className={({ isActive }) => 
-                        isActive ? `flex flex-col-reverse content-center items-center ${activeClassName}` : "flex flex-col-reverse content-center items-center"
+                        isActive ? `flex flex-col-reverse content-center items-center ${activeClassName}` :  `flex flex-col-reverse content-center items-center ${notActive}`
                     }
                 >
                     <p>Maps</p>
@@ -32,7 +33,7 @@ export default function Footer({children}) {
                 <NavLink 
                     to="/profil" 
                     className={({ isActive }) => 
-                        isActive ? `flex flex-col-reverse content-center items-center ${activeClassName}` : "flex flex-col-reverse content-center items-center"
+                        isActive ? `flex flex-col-reverse content-center items-center ${activeClassName}` :  `flex flex-col-reverse content-center items-center ${notActive}`
                     }
                 >
                     <p>Profil</p>
