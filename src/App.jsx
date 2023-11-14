@@ -1,4 +1,5 @@
 import Step from "./screen/Step";
+import Footer from "./components/Footer";
 import Map from "./screen/Map";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -7,10 +8,8 @@ export default function App() {
     return (
         <BrowserRouter>
             <Routes>
-                {/*<Route path="/" element={<Layout />}>*/}
                     <Route index element={<Step />} />
                     <Route path="map" element={<Map />} />
-                {/*</Routes>{</Route>*/}
             </Routes>
         </BrowserRouter>
     );
