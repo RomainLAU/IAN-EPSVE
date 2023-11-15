@@ -1,9 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
-import { ReactComponent as Map } from '../assets/Map.svg';
-import map from '../assets/map.png';
+import { useEffect } from 'react';
 
 export default function InteractiveMap({ activeElement, setActiveElement }) {
-    const [scrollX, setScrollX] = useState(0);
     const interphones = [
         {
             id: 0,

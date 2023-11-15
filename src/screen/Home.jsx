@@ -1,11 +1,10 @@
-import Footer from "../components/Footer"
-import Header from "../components/Header"
-import ProgressBar from 'react-animated-progress-bar';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 export default function Home() {
     return (
         <div className="flex justify-center align-center flex-col gap-4">
-            <Header/>
+            <Header />
             <h1>Home</h1>
             <div className="flex col bg-LightBlue">
                 <div className="flex justify-between">
@@ -15,7 +14,7 @@ export default function Home() {
                 <h2>Batiment A</h2>
                 <div>
                     <div></div>
-                    <div className="bar">       
+                    <div className="bar">
                         <div className="progress-bar" />
                     </div>
                 </div>
@@ -27,5 +26,5 @@ export default function Home() {
             </div>
             <Footer />
         </div>
-    )
+    );
 }

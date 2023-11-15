@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import AccordionItem from '../components/AccordionItem';
 import { Accordion } from '@szhsin/react-accordion';
 import Footer from '../components/Footer';
