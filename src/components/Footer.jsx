@@ -9,7 +9,7 @@ export default function Footer({ children }) {
 
     return (
         <footer className="flex justify-around content-center fixed bottom-0 w-screen">
-            <div className="flex justify-around content-center text-center w-full py-4 bg-gradient-to-t from-[#FFFFFF]">
+            <div className="flex justify-around content-center text-center w-full py-4 bg-custom-gradient">
                 <NavLink
                     to="/"
                     className={({ isActive }) =>
