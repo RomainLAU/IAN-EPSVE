@@ -4,12 +4,9 @@ import { ReactComponent as Maps } from '../assets/Maps.svg';
 import { ReactComponent as Profil } from '../assets/Profil.svg';
 
 export default function Footer({ children }) {
-    const activeClassName = 'isActive';
-    const notActive = 'notActive';
-
     return (
-        <footer className="flex justify-around content-center fixed bottom-0 w-screen">
-            <div className="flex justify-around content-center text-center w-full py-4 bg-custom-gradient">
+        <footer className="flex justify-around content-center fixed bottom-0 left-0 w-screen bg-[#FFF]">
+            <div className="flex justify-around content-center text-center w-full py-4">
                 <NavLink
                     to="/"
                     className={({ isActive }) =>

@@ -1,21 +1,16 @@
-import Footer from "../components/Footer";
-import Modal from "../components/Modal";
+import { useState } from 'react';
+import Footer from '../components/Footer';
+import InteractiveMap from '../components/InteractiveMap';
+import Modal from '../components/Modal';
 
 export default function Map() {
-
-    const activeElement = 
-    {
-        title: 'Bâtiment K, Allée 4',
-        code: 1234,
-        distance: '200m',
-        time: '5min',
-    }
+    const [activeElement, setActiveElement] = useState(null);
 
     return (
-        <div className="flex justify-center align-center flex-col gap-4">
-            <h1>Map</h1>
-            <Modal activeElement={activeElement}></Modal>
-            <Footer/>
-    </div>
-    )
+        <div className="h-screen w-screen max-h-screen">
+            <InteractiveMap activeElement={activeElement} setActiveElement={setActiveElement} />
+            {activeElement && <Modal activeElement={activeElement} />}
+            <Footer />
+        </div>
+    );
 }

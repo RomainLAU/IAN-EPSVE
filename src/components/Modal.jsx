@@ -1,11 +1,10 @@
-import { ReactComponent as Mic } from "../assets/Mic.svg";
-import { ReactComponent as Heart } from "../assets/Heart.svg";
-import image from "../assets/img_modal.png";
+import { ReactComponent as Mic } from '../assets/Mic.svg';
+import { ReactComponent as Heart } from '../assets/Heart.svg';
+import image from '../assets/img_modal.png';
 
-export default function Modal({activeElement}) {
-
+export default function Modal({ activeElement }) {
     return (
-        <div className="mx-[15px] rounded-[20px] bg-[#FFFFFF] flex max-w-[400px] min-w-[360px] shadow-lg">
+        <div className="fixed left-[14vw] bottom-[20vh] mx-[15px] rounded-[20px] bg-[#FFFFFF] flex max-w-[400px] min-w-[360px] shadow-lg">
             <img src={image} alt={activeElement.title} />
             <div className="flex flex-col gap-y-[8px] py-[18px] px-[15px] w-full">
                 <p className="text-[25px] text-[#333333]">{activeElement.title}</p>
