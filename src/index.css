@@ -39,8 +39,8 @@ code {
 
 .bar {
     width: 300px;
-    height: 3px;
-    background-color: #6ad5e5;
+    height: 5px;
+    background-color: #9bdce6;
     position: relative;
     border-radius: 18px;
 }
@@ -49,7 +49,7 @@ code {
     position: absolute;
     top: 0;
     left: 0;
-    height: 3px;
+    height: 5px;
     background-color: #162061;
     border-radius: 18px;
     width: 0;
@@ -63,7 +63,7 @@ code {
     top: -32px;
     right: 0; /* Ajustez la position de départ de l'image à gauche */
     transform: translate(-50%, -50%); /* Centre l'image verticalement par rapport à la barre */
-    scale: .3;
+    scale: .4;
     width: 0;
 
     animation: moveImage 1s forwards ease-in-out;
@@ -85,4 +85,23 @@ code {
     100% {
         transform: translateX(calc(100% - 30px)); /* Changer ceci en fonction de la distance souhaitée */
     }
+}
+
+.border-round {
+    border-radius: 25px 25px 0 25px;
+}
+
+.destination-flag {
+    position: absolute;
+    top: -21px;
+    right: -4px;
+}
+
+.flag-footer {
+    position: absolute;
+    right: 0;
+    height: 5px;
+    width: 20px;
+    border-radius: 2px;
+    background-color: white;
 }
