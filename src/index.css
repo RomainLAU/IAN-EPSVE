@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    font-family: 'Calibri', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Tisa Sans Pro Bold', sans-serif;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
@@ -12,4 +25,64 @@ body {
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.isActive * {
+    color: #162061;
+    fill: #162061;
+    stroke: #162061;
+}
+
+.notActive {
+    color: #7379a0;
+}
+
+.bar {
+    width: 300px;
+    height: 3px;
+    background-color: #6ad5e5;
+    position: relative;
+    border-radius: 18px;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background-color: #162061;
+    border-radius: 18px;
+    width: 0;
+
+    animation: progress 1s forwards ease-in-out;
+}
+
+.progress-bar::before {
+    content: url("./assets/user.png");
+    position: absolute;
+    top: -32px;
+    right: 0; /* Ajustez la position de départ de l'image à gauche */
+    transform: translate(-50%, -50%); /* Centre l'image verticalement par rapport à la barre */
+    scale: .3;
+    width: 0;
+
+    animation: moveImage 1s forwards ease-in-out;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 40%; /* Changer ceci en fonction de la largeur finale souhaitée */
+    }
+}
+
+@keyframes moveImage {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(100% - 30px)); /* Changer ceci en fonction de la distance souhaitée */
+    }
 }
