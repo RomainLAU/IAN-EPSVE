@@ -1,5 +1,6 @@
-import Step from './screen/Steps';
+import Step from './screen/Step';
 import Map from './screen/Map';
+import Profil from './screen/Profil';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 export default function App() {
@@ -8,6 +9,7 @@ export default function App() {
             <Routes>
                 <Route index element={<Step />} />
                 <Route path="map" element={<Map />} />
+                <Route path="profil" element={<Profil />} />
             </Routes>
         </BrowserRouter>
     );
