@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import AccordionItem from '../components/AccordionItem';
 import { Accordion } from '@szhsin/react-accordion';
+import Footer from '../components/Footer';
 
 export default function Step() {
     return (
@@ -43,12 +44,7 @@ export default function Step() {
                     et dolore magna aliqua.
                 </AccordionItem>
             </Accordion>
-            <Link
-                className="bg-slate-400 w-[320px] p-4 text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-center me-2 mb-2"
-                to="/map"
-            >
-                Map
-            </Link>
+            <Footer />
         </div>
     );
 }

@@ -1,4 +1,4 @@
-import Step from './screen/Step';
+import Step from './screen/Steps';
 import Map from './screen/Map';
 import Profil from './screen/Profil';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';

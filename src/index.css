@@ -4,12 +4,16 @@
 
 * {
     font-family: 'Calibri', sans-serif;
-} 
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Tisa Sans Pro Bold', sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Tisa Sans Pro Bold', sans-serif;
+}
 
 body {
     margin: 0;
@@ -23,15 +27,12 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-.isActive {
+.isActive * {
     color: #162061;
-}
-
-.isActive svg {
     fill: #162061;
     stroke: #162061;
 }
 
 .notActive {
-    color: #7379A0;
+    color: #7379a0;
 }
