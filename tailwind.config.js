@@ -2,7 +2,11 @@
 module.exports = {
     content: ['./src/**/*.{js,jsx,ts,tsx}'],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                calibri: ['Calibri', 'sans-serif'],
+            },
+        },
         colors: {
             DarkBlue: '#162061',
             LightBlue: '#3ECADD',
