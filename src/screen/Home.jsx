@@ -22,7 +22,7 @@ export default function Home() {
             <div className="w-full p-3">
                 <h2 className='text-[24px] font-calibri mb-5'>Ma localisation</h2>
                 <div className='flex flex-wrap gap-[6%]'>
-                    <div className="border-round flex flex-col bg-LightBlue p-4 h-[212px]">
+                    <div className="border-round flex flex-col bg-LightBlue w-full p-4 h-[212px]">
                         <div className="flex justify-between">
                             <h2 className='text-[40px] font-calibri'>Batiment A</h2>
                             <Link className="bg-[#FFFFFF] rounded-full flex justify-center items-center w-[40px] h-[40px]" to='/integration'>
