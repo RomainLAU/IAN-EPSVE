@@ -21,7 +21,7 @@ export default function Home() {
             <SearchBar />
             <div className="w-full p-3">
                 <h2 className='text-[24px] font-calibri mb-5'>Ma localisation</h2>
-                <div className='flex flex-wrap gap-[6%]'>
+                <div className='flex flex-wrap gap-[6%] mb-[100px]'>
                     <div className="border-round flex flex-col bg-LightBlue w-full p-4 h-[212px]">
                         <div className="flex justify-between">
                             <h2 className='text-[40px] font-calibri'>Batiment A</h2>
@@ -49,13 +49,14 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <Link className='border-round mt-4 flex flex-col pt-5 pb-5 bg-DarkBlue w-[47%] overflow-hidden'
-                    to="/integration">
+                    <Link className='border-round mt-4 flex flex-col pt-5 pb-0 bg-DarkBlue w-[47%] overflow-hidden' to="/integration">
                         <p className='text-[22px] font-calibri text-[#FFFFFF] leading-none ml-3'>Intégration</p>
                         <p className='text-[16px] font-calibri text-custom-white leading-none mt-3 ml-3'>
-                        Découvrez le fonctionnement de notre application !
+                            Découvrez le fonctionnement de notre application !
                         </p>
-                        <img src={I1} alt="Illustration" />
+                        <div className="flex-grow">
+                            <img src={I1} alt="Illustration" className='w-full h-full object-cover object-bottom'/>
+                        </div>
                     </Link>
                     <div className='border-round mt-4 flex items-center p-5 flex-col bg-[#38BD83] w-[47%]'>
                         <p className='text-[22px] font-calibri text-[#FFFFFF] leading-none text-center'>Direction vers Bâtiment A</p>
