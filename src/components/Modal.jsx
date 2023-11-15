@@ -5,7 +5,7 @@ import image from "../assets/img_modal.png";
 export default function Modal({activeElement}) {
 
     return (
-        <div className="mx-[15px] rounded-[20px] bg-[#FFFFFF] flex max-w-[360px] shadow-lg">
+        <div className="mx-[15px] rounded-[20px] bg-[#FFFFFF] flex max-w-[400px] min-w-[360px] shadow-lg">
             <img src={image} alt={activeElement.title} />
             <div className="flex flex-col gap-y-[8px] py-[18px] px-[15px] w-full">
                 <p className="text-[25px] text-[#333333]">{activeElement.title}</p>
@@ -15,6 +15,7 @@ export default function Modal({activeElement}) {
                     </div>
                     <p className="font-medium text-DarkBlue">{activeElement.code}</p>
                 </div>
+                <hr className="color-[#000000] opacity-20 h-[6px] mt-3" />
                 <div className="flex justify-between items-center shadow-lg-DarkBlue">
                     <p className="font-medium text-DarkBlue">{activeElement.distance}</p>
                     <p className="font-medium text-DarkBlue">{activeElement.time}</p>
