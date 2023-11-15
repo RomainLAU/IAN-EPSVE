@@ -105,3 +105,11 @@ code {
     border-radius: 2px;
     background-color: white;
 }
+
+.text-custom-white {
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.disable-arrow {
+    opacity: 0.6;
+}
